@@ -46,6 +46,7 @@ public List<GettingTalks> GettingTalksById(Long Id) {
                 gettingTalksMap.put(gettalks.getId(), gettingTalks);
             }
     );
+
     List<GettingTalks> gettingTalks = new ArrayList<>();
     for (Long talksId : gettingTalksMap.keySet()) {
         gettingTalks.add(gettingTalksMap.get(talksId));
